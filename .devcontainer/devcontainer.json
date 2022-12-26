@@ -1,7 +1,16 @@
 {
-  "image": "jekyll/jekyll",
-  "workspaceFolder": "/srv/jekyll",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "workspaceFolder": "/workspace",
   "workspaceMount": "type=volume,target=${containerWorkspaceFolder}",
+  "mounts": [
+    "type=volume,target=/mnt/gems"
+  ],
+  "containerEnv": {
+    "GEM_HOME": "/mnt/gems",
+    "BUNDLE_PATH": "/mnt/gems"
+  },
   "customizations": {
     "vscode": {
       "extensions": [
