@@ -10,7 +10,8 @@
       "extensions": [
         "eamodio.gitlens",
         "EditorConfig.EditorConfig",
-        "IBM.output-colorizer"
+        "IBM.output-colorizer",
+        "asciidoctor.asciidoctor-vscode"
       ],
       "settings": {
         "dotfiles.repository": "git@github.com:aetos382/dotfiles.git",
