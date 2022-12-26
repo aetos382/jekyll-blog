@@ -37,14 +37,6 @@ LSI: true
 strict_front_matter: true
 
 # Theme configuration
-theme: minima
-minima:
-  date_format: "%FT%T%z"
-  social_links:
-    - platform: github
-      user_url: "https://github.com/aetos382"
-    - platform: twitter
-      user_url: "https://twitter.com/aetos382"
 
 asciidoctor:
   attributes:
@@ -72,3 +64,4 @@ asciidoctor:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
