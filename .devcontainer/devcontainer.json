@@ -1,0 +1,19 @@
+{
+  "image": "jekyll/jekyll",
+  "workspaceFolder": "/srv/jekyll",
+  "workspaceMount": "type=volume,target=${containerWorkspaceFolder}",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "eamodio.gitlens",
+        "EditorConfig.EditorConfig",
+        "IBM.output-colorizer"
+      ],
+      "settings": {
+        "dotfiles.repository": "git@github.com:aetos382/dotfiles.git",
+        "dotfiles.targetPath": "~/dotfiles",
+        "dotfiles.installCommand": "~/dotfiles/devcontainer/install.sh"
+      }
+    }
+  }
+}
