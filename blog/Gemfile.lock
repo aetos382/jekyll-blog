@@ -50,6 +50,7 @@ GEM
       jekyll (>= 3.7, < 5.0)
     jekyll-include-cache (0.2.1)
       jekyll (>= 3.7, < 5.0)
+    jekyll-paginate (1.1.0)
     jekyll-sass-converter (3.0.0)
       sass-embedded (~> 1.54)
     jekyll-seo-tag (2.8.0)
@@ -98,6 +99,7 @@ DEPENDENCIES
   jekyll (~> 4.3)
   jekyll-asciidoc (~> 3.0)
   jekyll-feed
+  jekyll-paginate
   jekyll-seo-tag
   jekyll-theme-hydejack
   numo-linalg
