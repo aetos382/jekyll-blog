@@ -3,8 +3,18 @@
     "dockerfile": "Dockerfile"
   },
   "workspaceFolder": "/workspace",
-  "workspaceMount": "type=volume,target=${containerWorkspaceFolder}",
-  "forwardPorts": [4000],
+  "workspaceMount": "type=volume,source=jekyll-blog-workspace,target=${containerWorkspaceFolder}",
+  "mounts": [
+    "type=volume,source=jekyll-blog-gems,target=/usr/local/bundle/gems"
+  ],
+  "forwardPorts": [
+    4000
+  ],
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {
+      "version": "latest"
+    }
+  },
   "customizations": {
     "vscode": {
       "extensions": [
@@ -12,7 +22,7 @@
         "EditorConfig.EditorConfig",
         "IBM.output-colorizer",
         "asciidoctor.asciidoctor-vscode"
-      ],
+    	],
       "settings": {
         "dotfiles.repository": "git@github.com:aetos382/dotfiles.git",
         "dotfiles.targetPath": "~/dotfiles",
