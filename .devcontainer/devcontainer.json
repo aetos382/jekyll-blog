@@ -20,7 +20,6 @@
       "extensions": [
         "eamodio.gitlens",
         "EditorConfig.EditorConfig",
-        "IBM.output-colorizer",
         "asciidoctor.asciidoctor-vscode"
     	],
       "settings": {
