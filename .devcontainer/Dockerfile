@@ -1,16 +1,14 @@
 FROM ruby:3.1.3-bullseye
 
-RUN echo "gem: --no-ri --no-rdoc" > ~/.gemrc
-
 RUN apt update -y && \
-    apt upgrade -y --auto-remove --purge && \
-    apt install -y  \
+    apt upgrade -y --no-install-recommends && \
+    apt install -y --no-install-recommends \
         liblapacke-dev  \
-        libopenblas-dev
+        libopenblas-dev && \
+    apt autoremove -y --purge && \
+    apt autoclean -y
 
-RUN gem update --system
-RUN gem install --force bundler
-RUN gem install jekyll -- --use-system-libraries
+RUN gem install jekyll
 
 ENTRYPOINT ["/bin/bash"]
 
